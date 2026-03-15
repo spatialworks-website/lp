@@ -6,20 +6,23 @@
 <style>
 html, body {
   margin: 0;
-  height: 100%;
+  padding: 0;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
+  overflow: hidden; /* remove barras de scroll */
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   background: black;
 }
+
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* ajusta a imagem ao ecrã sem distorcer */
+  width: 100vw;   /* largura total da viewport */
+  height: 100vh;  /* altura total da viewport */
+  object-fit: cover; /* mantém proporção e cobre todo o ecrã */
 }
 </style>
 </head>
